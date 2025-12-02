@@ -37,7 +37,7 @@ export default function App() {
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-export default function RegistrationForm() {
+export default function About() {
   const navigate = useNavigate();
   const [form, setForm] = useState({
     firstName: "", lastName: "", username: "", email: "",
@@ -73,7 +73,7 @@ export default function RegistrationForm() {
 
   return (
     <div className="container">
-      <h2>Registration</h2>
+      <h2>About Component</h2>
       <form onSubmit={handleSubmit}>
         {Object.keys(form).map(key => key!=="password" && (
           <div className="input-group" key={key}>
@@ -100,11 +100,11 @@ export default function RegistrationForm() {
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
 
-export default function FormDetails() {
+export default function Functional() {
   const { state } = useLocation();
   return (
     <div className="container">
-      <h2>Form Details</h2>
+      <h2>Functional Component</h2>
       <div className="details-box">
         {Object.entries(state).map(([k,v])=><p key={k}><strong>{k}: </strong>{v}</p>)}
       </div>
