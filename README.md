@@ -31,7 +31,7 @@ export default function App() {
     </Routes>
   );
 }
- RegistrationForm.js**
+ About.js**
 
 ```jsx
 import React, { useState } from "react";
@@ -95,7 +95,7 @@ export default function RegistrationForm() {
     </div>
   );
 
- FormDetails.js**
+ Functional.js**
 
 import React from "react";
 import { useLocation, Link } from "react-router-dom";
